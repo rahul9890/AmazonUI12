@@ -1,1 +1,46 @@
-<p>register works!</p>
+<div>
+<form class="center">
+
+    <div class="mb-3" class="form-group">
+        <label for="firstName"  class="form-label">FirstName</label>
+        <input type="firstName" class="form-control" id="firstName" aria-describedby="firstName" placeholder="firstName" name="firstName"  
+        class="form-control" id="firstName"
+        [(ngModel)]="registerForm.firstName"
+        >
+    </div>
+
+    <div class="mb-3" class="form-group">
+        <label for="lastName"  class="form-label">Lastname</label>
+        <input type="lastName" class="form-control" id="lastName" aria-describedby="lastName" placeholder="lastName" name="lastName"
+        class="form-control" id="lastName"
+        [(ngModel)]="registerForm.lastName"
+        >
+    </div>
+
+    <div class="mb-3" class="form-group">
+        <label for="mobileNumber"  class="form-label" >MobileNumber</label>
+        <input type="mobileNumber" class="form-control" id="mobileNumber" aria-describedby="mobileNumber" placeholder="mobileNumber" name="mobileNumber" 
+        class="form-control" id="mobileNumber"
+        [(ngModel)]="registerForm.mobileNumber"
+        >
+    </div>
+
+    <div class="mb-3" class="form-group">
+        <label for="emaild"  class="form-label">Email</label>
+        <input type="emaild" class="form-control" id="emaild" aria-describedby="emaild" placeholder="emaild" name="emaild"
+        class="form-control" id="emaild"
+        [(ngModel)]="registerForm.emaild">
+    </div>
+
+    <div class="mb-3" class="form-group">
+        <label for="password"  class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" aria-describedby="password" placeholder="password" name="password" 
+        class="form-control" id="password"
+        [(ngModel)]="registerForm.password">
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="registerUser()">Register</button>
+    
+
+</form>
+</div>
