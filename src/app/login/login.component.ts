@@ -9,11 +9,13 @@ import { loginModel } from './loginModel';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent  {
 
   loginForm : loginModel=new loginModel();
   responseString!: String;
   isvalid:boolean=true;
+
+  title:String='Rahull';
 
   constructor(private router: Router,private loginService: LoginServiceService,private httpClient: HttpClient) { }
 
